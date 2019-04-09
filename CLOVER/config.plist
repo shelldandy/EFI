@@ -63,7 +63,7 @@
 		<key>DefaultVolume</key>
 		<string>Sierra</string>
 		<key>HibernationFixup</key>
-		<false/>
+		<true/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Log</key>
@@ -348,8 +348,6 @@
 		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
-		<key>NvidiaWeb</key>
-		<false/>
 	</dict>
 </dict>
 </plist>
