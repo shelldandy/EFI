@@ -1,32 +1,32 @@
 Anonymous UUID:       F724E10D-BCA0-5730-9469-4FE2F29D5464
 
-Sun Jun 10 21:53:54 2018
+Mon Apr  8 22:02:49 2019
 
 *** Panic Report ***
 panic(cpu 3 caller 0xffffff7f9e4f7d7a): "bool IOAccelDisplayMachine2::display_mode_did_change(uint32_t): vendor driver returns false"@/BuildRoot/Library/Caches/com.apple.xbs/Sources/IOAcceleratorFamily_kexts/IOAcceleratorFamily-378.18.1/Kext2/IOAccelDisplayMachine.cpp:490
 Backtrace (CPU 3), Frame : Return Address
-0xffffffa3d3143760 : 0xffffff801cc6e166
-0xffffffa3d31437b0 : 0xffffff801cd96714
-0xffffffa3d31437f0 : 0xffffff801cd88a00
-0xffffffa3d3143870 : 0xffffff801cc20180
-0xffffffa3d3143890 : 0xffffff801cc6dbdc
-0xffffffa3d31439c0 : 0xffffff801cc6d99c
-0xffffffa3d3143a20 : 0xffffff7f9e4f7d7a
-0xffffffa3d3143a50 : 0xffffff7f9e5247d5
-0xffffffa3d3143a90 : 0xffffff7f9d55aa46
-0xffffffa3d3143b40 : 0xffffff7f9d547a10
-0xffffffa3d3143b80 : 0xffffff7f9d551f15
-0xffffffa3d3143ba0 : 0xffffff7f9d5558ef
-0xffffffa3d3143c20 : 0xffffff7f9d54d1ce
-0xffffffa3d3143c70 : 0xffffff7f9d5b3057
-0xffffffa3d3143cc0 : 0xffffff801d26d55f
-0xffffffa3d3143d10 : 0xffffff801d2c9e47
-0xffffffa3d3143d70 : 0xffffff801cd44532
-0xffffffa3d3143dc0 : 0xffffff801cc73680
-0xffffffa3d3143e10 : 0xffffff801cc509dd
-0xffffffa3d3143e60 : 0xffffff801cc634eb
-0xffffffa3d3143ef0 : 0xffffff801cd735ad
-0xffffffa3d3143fa0 : 0xffffff801cc20986
+0xffffffa3d3143760 : 0xffffff801cc6e166 
+0xffffffa3d31437b0 : 0xffffff801cd96714 
+0xffffffa3d31437f0 : 0xffffff801cd88a00 
+0xffffffa3d3143870 : 0xffffff801cc20180 
+0xffffffa3d3143890 : 0xffffff801cc6dbdc 
+0xffffffa3d31439c0 : 0xffffff801cc6d99c 
+0xffffffa3d3143a20 : 0xffffff7f9e4f7d7a 
+0xffffffa3d3143a50 : 0xffffff7f9e5247d5 
+0xffffffa3d3143a90 : 0xffffff7f9d55aa46 
+0xffffffa3d3143b40 : 0xffffff7f9d547a10 
+0xffffffa3d3143b80 : 0xffffff7f9d551f15 
+0xffffffa3d3143ba0 : 0xffffff7f9d5558ef 
+0xffffffa3d3143c20 : 0xffffff7f9d54d1ce 
+0xffffffa3d3143c70 : 0xffffff7f9d5b3057 
+0xffffffa3d3143cc0 : 0xffffff801d26d55f 
+0xffffffa3d3143d10 : 0xffffff801d2c9e47 
+0xffffffa3d3143d70 : 0xffffff801cd44532 
+0xffffffa3d3143dc0 : 0xffffff801cc73680 
+0xffffffa3d3143e10 : 0xffffff801cc509dd 
+0xffffffa3d3143e60 : 0xffffff801cc634eb 
+0xffffffa3d3143ef0 : 0xffffff801cd735ad 
+0xffffffa3d3143fa0 : 0xffffff801cc20986 
       Kernel Extensions in backtrace:
          com.apple.iokit.IOGraphicsFamily(519.15)[D5F2A20D-CAB0-33B2-91B9-E8755DFC34CB]@0xffffff7f9d53e000->0xffffff7f9d586fff
             dependency: com.apple.iokit.IOPCIFamily(2.9)[1850E7DA-E707-3027-A3AA-637C80B57219]@0xffffff7f9d494000
@@ -42,7 +42,7 @@ Backtrace (CPU 3), Frame : Return Address
             dependency: com.apple.iokit.IOGraphicsFamily(519.15)[D5F2A20D-CAB0-33B2-91B9-E8755DFC34CB]@0xffffff7f9d53e000
 
 BSD process name corresponding to current thread: WindowServer
-Boot args: dart=0 darkwake=0
+Boot args: dart=0 darkwake=0 
 
 Mac OS version:
 17E199
@@ -201,23 +201,3 @@ com.apple.kec.corecrypto	1.0
 com.apple.kec.Libm	1
 
 EOF
-Model: iMac17,1, BootROM IM171.0154.B00, 4 processors, Intel Core i5, 3.50 GHz, 32 GB, SMC 2.33f10
-Graphics: NVIDIA GeForce GTX 1060 6GB, NVIDIA GeForce GTX 1060 6GB, PCIe
-Memory Module: BANK 0/DIMM0, 8 GB, DDR4, 2400 MHz, Crucial Technology, BLS8G4D240FSB.16FBR2
-Memory Module: BANK 1/DIMM0, 8 GB, DDR4, 2400 MHz, Crucial Technology, BLS8G4D240FSB.16FBR2
-Memory Module: BANK 0/DIMM1, 8 GB, DDR4, 2400 MHz, Crucial Technology, BLS8G4D240FSB.16FBD2
-Memory Module: BANK 1/DIMM1, 8 GB, DDR4, 2400 MHz, Crucial Technology, BLS8G4D240FSB.16FBD2
-AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0x111), Broadcom BCM43xx 1.0 (7.77.37.31.1a9)
-Bluetooth: Version 6.0.6f2, 3 services, 27 devices, 1 incoming serial ports
-Network Service: Wi-Fi, AirPort, en1
-Serial ATA Device: Samsung SSD 850 EVO 500GB, 500.11 GB
-Serial ATA Device: WDC WD20EURS-63S48Y0, 2 TB
-Serial ATA Device: ST4000DM005-2DP166, 4 TB
-USB Device: USB 3.1 Bus
-USB Device: USB 3.0 Bus
-USB Device: USB Receiver
-USB Device: Apple Keyboard
-USB Device: BRCM20702 Hub
-USB Device: Bluetooth USB Host Controller
-USB Device: HD Pro Webcam C920
-Thunderbolt Bus:
