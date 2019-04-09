@@ -63,7 +63,7 @@
 		<key>DefaultVolume</key>
 		<string>Sierra</string>
 		<key>HibernationFixup</key>
-		<true/>
+		<false/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Log</key>
@@ -240,12 +240,12 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB3 Fix for 10.13.4+</string>
+				<string>USB3 Fix for 10.13.6+</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g32UDw+DlwQAAA==
+				g32IDw+DpwQAAA==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
@@ -255,7 +255,7 @@
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g32UD5CQkJCQkA==
+				g32ID5CQkJCQkA==
 				</data>
 			</dict>
 			<dict>
@@ -349,7 +349,7 @@
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NvidiaWeb</key>
-		<true/>
+		<false/>
 	</dict>
 </dict>
 </plist>
