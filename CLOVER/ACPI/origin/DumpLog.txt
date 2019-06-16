@@ -1,0 +1,140 @@
+32:304  1:174  Found BIOS RSDP at F05B0
+32:304  0:000  Printing ACPI tables from RSDP F05B0 ...
+32:304  0:000   F05B0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+32:304  0:000    (Rsdt: BEA82028)
+32:304  0:000    BEA82028: 'RSDT', 'A M I', Rev: 1, Len: 112
+32:304  0:000    Tables in Rsdt: 19
+32:304  0:000    0. BEA82168: 'FACP', 'A M I', Rev: 2, Len: 132
+32:304  0:000        (Dsdt: BEA821F0, Facs: BEE30C00)
+32:304  0:000        BEA821F0: 'DSDT', 'A M I', Rev: 2, Len: 164653
+32:306  0:002        BEE30C00: 'FACS', Ver: 0, Len: 64
+32:306  0:000    1. BEAAA638: 'APIC', 'A M I', Rev: 3, Len: 132
+32:306  0:000    2. BEAAA6C0: 'FPDT', 'A M I', Rev: 1, Len: 68
+32:306  0:000    3. BEAAA708: 'MCFG', 'A M I', Rev: 1, Len: 60
+32:306  0:000    4. BEAAA748: 'FIDT', 'A M I', Rev: 1, Len: 156
+32:306  0:000    5. BEAAA7E8: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+32:306  0:000    6. BEAAD940: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+32:306  0:000    7. BEAAFE88: 'HPET', 'SKL', Rev: 1, Len: 56
+32:306  0:000    8. BEAAFEC0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+32:306  0:000    9. BEAB0D00: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+32:306  0:000    10. BEAB37D8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+32:306  0:000    11. BEAB3820: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+32:306  0:000    12. BEAB4700: 'LPIT', 'SKL', Rev: 1, Len: 148
+32:306  0:000    13. BEAB4798: 'WSMT', 'SKL', Rev: 1, Len: 40
+32:306  0:000    14. BEAB47C0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+32:306  0:000    15. BEAB4A60: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+32:306  0:000    16. BEAB7A68: 'DBGP', '', Rev: 1, Len: 52
+32:306  0:000    17. BEAB7AA0: 'DBG2', '', Rev: 0, Len: 84
+32:306  0:000    18. BEAB7AF8: 'BGRT', 'A M I', Rev: 1, Len: 56
+32:306  0:000  Found UEFI Acpi 2.0 RSDP at BEA82000
+32:306  0:000  Saving ACPI tables from RSDP BEA82000 to EFI\CLOVER\ACPI\origin ...
+32:306  0:000   BEA82000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+32:337  0:030    (Xsdt: BEA820A0, Rsdt: BEA82028)
+32:337  0:000    BEA820A0: 'XSDT', 'A M I', Rev: 1, Len: 188 -> XSDT.aml
+32:368  0:031    BEA82028: 'RSDT', 'A M I', Rev: 1, Len: 112 -> RSDT.aml
+32:400  0:031    Tables in Xsdt: 19
+32:400  0:000    0. BEAAA520: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+32:431  0:031        (Dsdt: BEA821F0, Facs: BEE30C40, XDsdt: BEA821F0, XFacs: 0)
+32:431  0:000        BEA821F0: 'DSDT', 'A M I', Rev: 2, Len: 164653 -> DSDT.aml
+32:474  0:042        BEE30C40: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+32:505  0:031    1. BEAAA638: 'APIC', 'A M I', Rev: 3, Len: 132 -> APIC.aml
+32:536  0:031    2. BEAAA6C0: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+32:570  0:033    3. BEAAA708: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+32:601  0:030    4. BEAAA748: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+32:632  0:031    5. BEAAA7E8: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628 -> SSDT-0-SaSsdt.aml
+32:666  0:033    6. BEAAD940: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540 -> SSDT-1-PegSsdt.aml
+32:703  0:036    7. BEAAFE88: 'HPET', 'SKL', Rev: 1, Len: 56 -> HPET.aml
+32:733  0:030    8. BEAAFEC0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643 -> SSDT-2-Ther_Rvp.aml
+32:762  0:028    9. BEAB0D00: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967 -> SSDT-3-xh_rvp10.aml
+32:791  0:028    10. BEAB37D8: 'UEFI', 'EDK2', Rev: 1, Len: 66 -> UEFI.aml
+32:820  0:028    11. BEAB3820: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806 -> SSDT-4-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+32:849  0:028        * BE5D7398: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1848  53 53 44 54 38 07 00 00 02 A8 50 6D 52 65 66 00 Internal length = 1848 -> SSDT-x4_0-Cpu0Ist.aml
+32:885  0:036        * BE5AD018: 'SSDT', 'ApIst', Rev: 2, Len: 1628  53 53 44 54 5C 06 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1628 -> SSDT-x4_1-ApIst.aml
+32:914  0:028        * BE5AD898: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x4_2-Cpu0Cst.aml
+32:945  0:030        * BE5ADDD8: 'SSDT', 'ApCst', Rev: 2, Len: 394  53 53 44 54 8A 01 00 00 02 39 50 6D 52 65 66 00 Internal length = 394 -> SSDT-x4_3-ApCst.aml
+32:974  0:028        * BB56EDD8: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 277  53 53 44 54 15 01 00 00 02 AE 50 6D 52 65 66 00 Internal length = 277 -> SSDT-x4_4-Cpu0Hwp.aml
+33:002  0:028        * BB577298: 'SSDT', 'ApHwp', Rev: 2, Len: 407  53 53 44 54 97 01 00 00 02 F1 50 6D 52 65 66 00 Internal length = 407 -> SSDT-x4_5-ApHwp.aml
+33:032  0:029        * BB56DDD8: 'SSDT', 'HwpLvt', Rev: 2, Len: 420  53 53 44 54 A4 01 00 00 02 3C 50 6D 52 65 66 00 Internal length = 420 -> SSDT-x4_6-HwpLvt.aml
+33:064  0:032  
+33:064  0:000    12. BEAB4700: 'LPIT', 'SKL', Rev: 1, Len: 148 -> LPIT.aml
+33:095  0:031    13. BEAB4798: 'WSMT', 'SKL', Rev: 1, Len: 40 -> WSMT.aml
+33:122  0:027    14. BEAB47C0: 'SSDT', 'sensrhub', Rev: 2, Len: 671 -> SSDT-5-sensrhub.aml
+33:153  0:030    15. BEAB4A60: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290 -> SSDT-6-PtidDevc.aml
+33:182  0:028    16. BEAB7A68: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
+33:210  0:028    17. BEAB7AA0: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
+33:239  0:028    18. BEAB7AF8: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+33:267  0:028    Tables in Rsdt: 19
+33:267  0:000    0. BEA82168: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+33:296  0:029        (Dsdt: BEA821F0, Facs: BEE30C00)
+33:296  0:000        BEA821F0: 'DSDT', 'A M I', Rev: 2, Len: 164653
+33:298  0:002        BEE30C00: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+33:330  0:031    1. BEAAA638: 'APIC', 'A M I', Rev: 3, Len: 132
+33:330  0:000    2. BEAAA6C0: 'FPDT', 'A M I', Rev: 1, Len: 68
+33:330  0:000    3. BEAAA708: 'MCFG', 'A M I', Rev: 1, Len: 60
+33:330  0:000    4. BEAAA748: 'FIDT', 'A M I', Rev: 1, Len: 156
+33:330  0:000    5. BEAAA7E8: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+33:330  0:000    6. BEAAD940: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+33:330  0:000    7. BEAAFE88: 'HPET', 'SKL', Rev: 1, Len: 56
+33:330  0:000    8. BEAAFEC0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+33:330  0:000    9. BEAB0D00: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+33:330  0:000    10. BEAB37D8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+33:330  0:000    11. BEAB3820: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+33:330  0:000    12. BEAB4700: 'LPIT', 'SKL', Rev: 1, Len: 148
+33:330  0:000    13. BEAB4798: 'WSMT', 'SKL', Rev: 1, Len: 40
+33:330  0:000    14. BEAB47C0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+33:330  0:000    15. BEAB4A60: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+33:330  0:000    16. BEAB7A68: 'DBGP', '', Rev: 1, Len: 52
+33:330  0:000    17. BEAB7AA0: 'DBG2', '', Rev: 0, Len: 84
+33:330  0:000    18. BEAB7AF8: 'BGRT', 'A M I', Rev: 1, Len: 56
+33:330  0:000  Found UEFI Acpi 1.0 RSDP at BEA82000
+33:330  0:000  Printing ACPI tables from RSDP BEA82000 ...
+33:330  0:000   BEA82000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+33:330  0:000    (Xsdt: BEA820A0, Rsdt: BEA82028)
+33:330  0:000    BEA820A0: 'XSDT', 'A M I', Rev: 1, Len: 188
+33:330  0:000    BEA82028: 'RSDT', 'A M I', Rev: 1, Len: 112
+33:330  0:000    Tables in Xsdt: 19
+33:330  0:000    0. BEAAA520: 'FACP', 'A M I', Rev: 6, Len: 276
+33:330  0:000        (Dsdt: BEA821F0, Facs: BEE30C40, XDsdt: BEA821F0, XFacs: 0)
+33:330  0:000        BEA821F0: 'DSDT', 'A M I', Rev: 2, Len: 164653
+33:332  0:002        BEE30C40: 'FACS', Ver: 2, Len: 64
+33:332  0:000    1. BEAAA638: 'APIC', 'A M I', Rev: 3, Len: 132
+33:332  0:000    2. BEAAA6C0: 'FPDT', 'A M I', Rev: 1, Len: 68
+33:332  0:000    3. BEAAA708: 'MCFG', 'A M I', Rev: 1, Len: 60
+33:332  0:000    4. BEAAA748: 'FIDT', 'A M I', Rev: 1, Len: 156
+33:332  0:000    5. BEAAA7E8: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+33:332  0:000    6. BEAAD940: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+33:332  0:000    7. BEAAFE88: 'HPET', 'SKL', Rev: 1, Len: 56
+33:332  0:000    8. BEAAFEC0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+33:332  0:000    9. BEAB0D00: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+33:332  0:000    10. BEAB37D8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+33:332  0:000    11. BEAB3820: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+33:332  0:000    12. BEAB4700: 'LPIT', 'SKL', Rev: 1, Len: 148
+33:332  0:000    13. BEAB4798: 'WSMT', 'SKL', Rev: 1, Len: 40
+33:332  0:000    14. BEAB47C0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+33:332  0:000    15. BEAB4A60: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+33:332  0:000    16. BEAB7A68: 'DBGP', '', Rev: 1, Len: 52
+33:332  0:000    17. BEAB7AA0: 'DBG2', '', Rev: 0, Len: 84
+33:332  0:000    18. BEAB7AF8: 'BGRT', 'A M I', Rev: 1, Len: 56
+33:332  0:000    Tables in Rsdt: 19
+33:332  0:000    0. BEA82168: 'FACP', 'A M I', Rev: 2, Len: 132
+33:332  0:000        (Dsdt: BEA821F0, Facs: BEE30C00)
+33:332  0:000        BEA821F0: 'DSDT', 'A M I', Rev: 2, Len: 164653
+33:334  0:002        BEE30C00: 'FACS', Ver: 0, Len: 64
+33:334  0:000    1. BEAAA638: 'APIC', 'A M I', Rev: 3, Len: 132
+33:334  0:000    2. BEAAA6C0: 'FPDT', 'A M I', Rev: 1, Len: 68
+33:334  0:000    3. BEAAA708: 'MCFG', 'A M I', Rev: 1, Len: 60
+33:334  0:000    4. BEAAA748: 'FIDT', 'A M I', Rev: 1, Len: 156
+33:334  0:000    5. BEAAA7E8: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+33:334  0:000    6. BEAAD940: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+33:334  0:000    7. BEAAFE88: 'HPET', 'SKL', Rev: 1, Len: 56
+33:334  0:000    8. BEAAFEC0: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+33:334  0:000    9. BEAB0D00: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+33:334  0:000    10. BEAB37D8: 'UEFI', 'EDK2', Rev: 1, Len: 66
+33:334  0:000    11. BEAB3820: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+33:334  0:000    12. BEAB4700: 'LPIT', 'SKL', Rev: 1, Len: 148
+33:334  0:000    13. BEAB4798: 'WSMT', 'SKL', Rev: 1, Len: 40
+33:334  0:000    14. BEAB47C0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+33:334  0:000    15. BEAB4A60: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+33:334  0:000    16. BEAB7A68: 'DBGP', '', Rev: 1, Len: 52
+33:334  0:000    17. BEAB7AA0: 'DBG2', '', Rev: 0, Len: 84
+33:334  0:000    18. BEAB7AF8: 'BGRT', 'A M I', Rev: 1, Len: 56
