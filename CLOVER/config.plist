@@ -12,13 +12,17 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FiX_TMR_40000</key>
-				<false/>
-				<key>FiX_WAK_200000</key>
-				<false/>
+				<key>FixHPET</key>
+				<true/>
+				<key>FixIPIC</key>
+				<true/>
 				<key>FixLAN</key>
+				<false/>
+				<key>FixRTC</key>
 				<true/>
 				<key>FixShutdown</key>
+				<true/>
+				<key>FixTMR</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -27,59 +31,13 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>Rename HDAS to HDEF</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EHC1 to EH01</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RUhDMQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EHC2 to EH02</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RUhDMg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change XHCI to XHC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					WEhDSQ==
-					</data>
+					<data>WEhDSQ==</data>
 					<key>Replace</key>
-					<data>
-					WEhDXw==
-					</data>
+					<data>WEhDXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -87,18 +45,57 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					WEhDMQ==
-					</data>
+					<data>WEhDMQ==</data>
 					<key>Replace</key>
-					<data>
-					WEhDXw==
-					</data>
+					<data>WEhDXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>U0FUMA==</data>
+					<key>Replace</key>
+					<data>U0FUQQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC1 to EH01</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RUhDMQ==</data>
+					<key>Replace</key>
+					<data>RUgwMQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC2 to EH02</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RUhDMg==</data>
+					<key>Replace</key>
+					<data>RUgwMg==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
+		<key>DropTables</key>
+		<array>
+			<dict>
+				<key>Signature</key>
+				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>MATS</string>
+			</dict>
+		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -109,13 +106,15 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 darkwake=0 shikigva=32 shiki-id=Mac-7BA5B2D9E42DDD94</string>
+		<string>dart=0 slide=0 darkwake=0 uia_exclude=HS14 shikigva=32 shiki-id=Mac-7BA5B2D9E42DDD94 -v keepsyms=1</string>
 		<key>DefaultVolume</key>
 		<string>Sierra</string>
 		<key>HibernationFixup</key>
@@ -129,14 +128,14 @@
 		<key>Timeout</key>
 		<integer>3</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<string>Yes</string>
 	</dict>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -163,8 +162,6 @@
 		<dict>
 			<key>FixOwnership</key>
 			<true/>
-			<key>Inject</key>
-			<false/>
 		</dict>
 	</dict>
 	<key>DisableDrivers</key>
@@ -225,7 +222,7 @@
 		<key>#FakeCPUID</key>
 		<string>0x010676</string>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelCpu</key>
@@ -244,71 +241,33 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
+				<data>RXh0ZXJuYWw=</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
+				<data>SW50ZXJuYWw=</data>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>AppleHDA/Resources/xml&gt;zml</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				eG1sLnps
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
+				<data>g32UDw+DlwQAAA==</data>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>
-				em1sLnps
-				</data>
+				<data>g32UD5CQkJCQkA==</data>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>10.12-AppleHDA/Realtek ALC...</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				ihnUEQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
+				<data>g32MEA==</data>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.9-10.12-AppleHDA/Realtek ALC1150</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				ixnUEQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAnsEA==
-				</data>
+				<data>g32MGw==</data>
 			</dict>
 		</array>
 	</dict>
@@ -317,44 +276,56 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3</string>
+		<string>0x67</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/22/2015</string>
+		<string>04/24/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM171.88Z.0105.B00.1509221819</string>
+		<string>IM183.88Z.F000.B00.2004240928</string>
 		<key>Board-ID</key>
-		<string>Mac-65CE76090165799A</string>
+		<string>Mac-BE088AF8C5EB4FA2</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02611100QXDNJK1H</string>
+		<string>C02737100CDJ0PG1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>iMac17,1</string>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string></string>
+		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>13</string>
+		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>183.0.0.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE176</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF7F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>ProductName</key>
-		<string>iMac17,1</string>
-		<key>SerialNumber</key>
-		<string>C02RFD7AGG7L</string>
-		<key>Trust</key>
+		<key>Mobile</key>
 		<false/>
+		<key>PlatformFeature</key>
+		<string>0x00</string>
+		<key>ProductName</key>
+		<string>iMac18,3</string>
+		<key>SerialNumber</key>
+		<string>C02VD9Y4J1GJ</string>
+		<key>SmUUID</key>
+		<string>5675C75C-ECAB-4C74-9E9D-049CA7F64333</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
