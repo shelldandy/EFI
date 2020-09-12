@@ -226,8 +226,8 @@
 		<dict>
 			<key>Entries</key>
 			<true/>
-			<key>Legacy</key>
-			<false/>
+			<key>Linux</key>
+			<true/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -236,7 +236,7 @@
 		<key>ShowOptimus</key>
 		<true/>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>Catalina</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
