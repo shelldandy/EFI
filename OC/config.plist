@@ -672,6 +672,8 @@
 			<false/>
 			<key>XhciPortLimit</key>
 			<true/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -697,7 +699,7 @@
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>PickerAttributes</key>
-			<integer>1</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
@@ -710,6 +712,12 @@
 			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>5</integer>
+			<key>LauncherOption</key>
+			<string>Disabled</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
+			<key>PickerVariant</key>
+			<string>Modern</string>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -761,8 +769,6 @@
 			<false/>
 			<key>BlacklistAppleUpdate</key>
 			<true/>
-			<key>BootProtect</key>
-			<string>None</string>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>EnablePassword</key>
@@ -911,6 +917,8 @@
 			<string>C02DM08LJV3Q</string>
 			<key>SystemUUID</key>
 			<string>DADDB4D4-FD41-4783-8ED2-6241919C5178</string>
+			<key>MaxBIOSVersion</key>
+			<false/>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -920,6 +928,8 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -953,6 +963,8 @@
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>VolumeAmplifier</key>
+			<integer>0</integer>
+			<key>SetupDelay</key>
 			<integer>0</integer>
 		</dict>
 		<key>ConnectDrivers</key>
@@ -1052,8 +1064,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
@@ -1065,6 +1075,8 @@
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
+			<false/>
+			<key>DisableSecurityPolicy</key>
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
